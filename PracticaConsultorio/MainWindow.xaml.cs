@@ -117,7 +117,18 @@ namespace PracticaConsultorio
             txtRecetaConsulta.Text = "";
             txtFechaConsulta.Text = "";
 
+            var consultas = Datos.consultas;
+
             GridFormularioConsulta.Visibility = Visibility.Collapsed;
+        }
+
+        private void btnHistorialConsultas_Click(object sender, RoutedEventArgs e)
+        {
+            var paciente = Datos.pacientes[lstPacientes.SelectedIndex];
+
+
+            var ventanaHistorial = new HistorialConsultasWindow(paciente);
+            ventanaHistorial.Show();
         }
     }
 }
