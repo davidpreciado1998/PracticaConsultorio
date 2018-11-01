@@ -20,9 +20,16 @@ namespace PracticaConsultorio
     /// </summary>
     public partial class DiagnosticoonsultaControl : UserControl
     {
-        public DiagnosticoonsultaControl()
+        Consulta consulta;
+        public DiagnosticoonsultaControl(Consulta consulta)
         {
             InitializeComponent();
+            this.consulta = consulta;
+
+            lblSintomas.Text = consulta.Sintomas;
+            lblDiagnostico.Text = consulta.Diagnostico;
+            lblReceta.Text = consulta.Receta;
+            lblFecha.Text = consulta.fecha.ToString();
         }
     }
 }

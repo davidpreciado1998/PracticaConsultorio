@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PracticaConsultorio"
              mc:Ignorable="d" d:DesignWidth="800" Height="205.241">
-    <Grid Background="White">
+    <Grid Background="Wheat">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -14,9 +14,9 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Text="Sintomas" Grid.Column="0" Grid.Row="0"></TextBlock>
-        <TextBlock Text="Diagnostico" Grid.Column="1" Grid.Row="0"></TextBlock>
-        <TextBlock Text="Receta" Grid.Column="0" Grid.Row="1"></TextBlock>
-        <TextBlock Text="Fecha" Grid.Column="1" Grid.Row="1"></TextBlock>
+        <TextBlock Name="lblSintomas" Text="Sintomas" Grid.Column="0" Grid.Row="0"></TextBlock>
+        <TextBlock Name="lblDiagnostico" Text="Diagnostico" Grid.Column="1" Grid.Row="0"></TextBlock>
+        <TextBlock Name="lblReceta" Text="Receta" Grid.Column="0" Grid.Row="1"></TextBlock>
+        <TextBlock Name="lblFecha" Text="Fecha" Grid.Column="1" Grid.Row="1"></TextBlock>
     </Grid>
 </UserControl>
